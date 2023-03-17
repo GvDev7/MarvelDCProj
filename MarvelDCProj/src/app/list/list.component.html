@@ -1,5 +1,5 @@
 <div>
   <ul class="list-group list-group-flush">
-    <app-item *ngFor="let char of characters" [character]="char"></app-item>
+    <app-item *ngFor="let char of characters; trackBy:customeTB" [character]="char"></app-item>
   </ul>
 </div>

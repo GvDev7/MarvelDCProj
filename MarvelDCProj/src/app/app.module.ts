@@ -8,6 +8,7 @@ import { ListComponent } from './list/list.component';
 import { ItemComponent } from './item/item.component';
 import { ChosenBrandService } from './chosen-brand.service';
 import { CreateCharacterComponent } from './create-character/create-character.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CreateCharacterComponent } from './create-character/create-character.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [ChosenBrandService],
   bootstrap: [AppComponent]
