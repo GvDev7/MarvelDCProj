@@ -1,0 +1,10 @@
+<div>
+    <ul class="nav nav-tabs">
+      <li class="nav-item" [ngClass]="{active: chosenBrand === 'all'}"><a (click)="onChoose('all')" class="nav-link active">All</a></li>
+      <li class="nav-item" [ngClass]="{active: chosenBrand === 'Marvel'}"><a (click)="onChoose('Marvel')" class="nav-link">Marvel</a></li>
+      <li class="nav-item" [ngClass]="{active: chosenBrand === 'DC'}"><a (click)="onChoose('DC')" class="nav-link">DC</a></li>
+      <li class="nav-item" [ngClass]="{active: chosenBrand === 'Black Sands'}"><a (click)="onChoose('Black Sands')" class="nav-link">Black Sands</a></li>
+      <li class="nav-item" [ngClass]="{active: chosenBrand === 'Anime'}"><a (click)="onChoose('Anime')" class="nav-link">Anime</a></li>
+    </ul>
+    <app-list [characters]="getCharacters()"></app-list>
+</div>
